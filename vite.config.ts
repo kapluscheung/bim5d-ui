@@ -4,6 +4,7 @@
   import path from 'path';
 
   export default defineConfig({
+    base: '/bim5d-ui/',
     plugins: [react()],
     resolve: {
       extensions: ['.js', '.jsx', '.ts', '.tsx', '.json'],

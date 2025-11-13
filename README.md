@@ -9,3 +9,6 @@
 
   Run `npm run dev` to start the development server.
   
+
+  ## Deploy
+  Run `npm run deploy` to deploy the build to GitHub Pages.
