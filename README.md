@@ -1,7 +1,7 @@
 
   # BIM 5D
 
-  This is a code bundle for BIM 5D.
+  This is a code bundle for BIM 5D UI. Demo: https://kapluscheung.github.io/bim5d-ui/
 
   ## Running the code
 
