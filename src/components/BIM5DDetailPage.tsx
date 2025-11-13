@@ -529,7 +529,7 @@ export function BIM5DDetailPage({ scheduleId, onBack }: BIM5DDetailPageProps) {
                   </div>
                 </div>
                 
-                <ScrollArea className="flex-1">
+                <ScrollArea className="flex-1 overflow-hidden">
                   <div className="p-4">
                     <Table>
                       <TableHeader>
@@ -556,7 +556,7 @@ export function BIM5DDetailPage({ scheduleId, onBack }: BIM5DDetailPageProps) {
         </div>
 
         {/* QTO Expression Dialog */}
-        <Dialog open={showExpressionDialog} onOpenChange={setShowExpressionDialog}>
+        {/* <Dialog open={showExpressionDialog} onOpenChange={setShowExpressionDialog}>
           <DialogContent className="max-w-[80vw] w-[80vw] h-[80vh] p-0 gap-0 resize overflow-auto">
             <DialogHeader className="px-6 py-4 border-b border-collection-1-light-gray-BG shrink-0">
               <DialogTitle className="text-collection-1-select-color">QTO Expression</DialogTitle>
@@ -565,7 +565,7 @@ export function BIM5DDetailPage({ scheduleId, onBack }: BIM5DDetailPageProps) {
               <BIMQuantityTakeoff />
             </div>
           </DialogContent>
-        </Dialog>
+        </Dialog> */}
 
         {/* Formula Editor Dialog */}
         <Dialog open={showFormulaDialog} onOpenChange={setShowFormulaDialog}>
