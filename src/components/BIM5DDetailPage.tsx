@@ -56,12 +56,8 @@ const mockElements: Element[] = [
     quantities: [
       { id: 'Q001', name: 'Count', value: 33.0, unit: 'EA', costMapped: false, taskMapped: false },
       { id: 'Q002', name: 'Length', value: 65.1, unit: 'M', costMapped: false, taskMapped: false },
-      { id: 'Q003', name: 'Reference side Surface Area', value: 132.9, unit: 'M2', costMapped: true, taskMapped: false },
-      { id: 'Q004', name: 'Opposite side Surface Area', value: 133.1, unit: 'M2', costMapped: true, taskMapped: false },
-      { id: 'Q005', name: 'Top Surface Area', value: 13.0, unit: 'M2', costMapped: false, taskMapped: false },
-      { id: 'Q006', name: 'Bottom Surface Area', value: 12.0, unit: 'M2', costMapped: false, taskMapped: false },
-      { id: 'Q007', name: 'Net Volume', value: 26.6, unit: 'M3', costMapped: true, taskMapped: false },
-      { id: 'Q008', name: 'Gross Volume', value: 28.9, unit: 'M3', costMapped: false, taskMapped: false },
+      { id: 'Q003', name: 'Net Volume', value: 26.6, unit: 'M3', costMapped: true, taskMapped: false },
+      { id: 'Q004', name: 'Gross Volume', value: 28.9, unit: 'M3', costMapped: false, taskMapped: false },
     ],
     costMapped: true,
     taskMapped: false,
@@ -74,8 +70,7 @@ const mockElements: Element[] = [
     quantities: [
       { id: 'Q009', name: 'Count', value: 12.0, unit: 'EA', costMapped: false, taskMapped: false },
       { id: 'Q010', name: 'Length', value: 45.2, unit: 'M', costMapped: false, taskMapped: false },
-      { id: 'Q011', name: 'Reference side Surface Area', value: 92.5, unit: 'M2', costMapped: true, taskMapped: false },
-      { id: 'Q012', name: 'Net Volume', value: 18.4, unit: 'M3', costMapped: true, taskMapped: false },
+      { id: 'Q011', name: 'Net Volume', value: 18.4, unit: 'M3', costMapped: true, taskMapped: false },
     ],
     costMapped: true,
     taskMapped: false,
@@ -88,8 +83,7 @@ const mockElements: Element[] = [
     quantities: [
       { id: 'Q013', name: 'Count', value: 8.0, unit: 'EA', costMapped: false, taskMapped: false },
       { id: 'Q014', name: 'Length', value: 32.8, unit: 'M', costMapped: false, taskMapped: false },
-      { id: 'Q015', name: 'Reference side Surface Area', value: 68.3, unit: 'M2', costMapped: true, taskMapped: false },
-      { id: 'Q016', name: 'Net Volume', value: 22.1, unit: 'M3', costMapped: true, taskMapped: false },
+      { id: 'Q015', name: 'Net Volume', value: 22.1, unit: 'M3', costMapped: true, taskMapped: false },
     ],
     costMapped: true,
     taskMapped: false,
@@ -97,11 +91,11 @@ const mockElements: Element[] = [
 ];
 
 const mockBQData: BQItem[] = [
-  { id: 'BQ000', code: '000', description: 'ARAB BLK3 3rd Deliverable 20151217', quantity: 1.0, uom: '', unitCost: 0, totalCost: 0, mapped: false, level: 0 },
+  { id: 'BQ000', code: '000', description: 'A BLK3 3rd Deliverable 20151217', quantity: 1.0, uom: '', unitCost: 0, totalCost: 0, mapped: false, level: 0 },
   { 
     id: 'BQ001', 
-    code: 'ARAB', 
-    description: 'ARAB', 
+    code: 'A', 
+    description: 'A', 
     quantity: 1.0, 
     uom: '', 
     unitCost: 0, 
@@ -111,7 +105,7 @@ const mockBQData: BQItem[] = [
     children: [
       { 
         id: 'BQ002', 
-        code: 'ARAB.01', 
+        code: 'A.01', 
         description: 'SUBSTRUCTURAL', 
         quantity: 0.0, 
         uom: '', 
@@ -122,7 +116,7 @@ const mockBQData: BQItem[] = [
         children: [
           { 
             id: 'BQ003', 
-            code: 'ARAB.01.01', 
+            code: 'A.01.01', 
             description: 'EXECUTION OF PILE CAPS AND FOOTINGS TO EXCAVATION', 
             quantity: 1.0, 
             uom: '', 
@@ -131,16 +125,16 @@ const mockBQData: BQItem[] = [
             mapped: false, 
             level: 3,
             children: [
-              { id: 'BQ004', code: 'ARAB.01.01.01.01', description: 'Excavating for pile caps and footings', quantity: 0.0, uom: 'm3', unitCost: 0, totalCost: 0, mapped: false, level: 4 },
-              { id: 'BQ005', code: 'ARAB.01.01.01.01.01', description: 'Not Exceeding 1.50 m deep', quantity: 2945.2, uom: 'm3', unitCost: 0, totalCost: 0, mapped: true, mappedQuantityId: 'Q007', level: 5 },
-              { id: 'BQ006', code: 'ARAB.01.01.01.01.02', description: '1.50m - 3.00m deep', quantity: 2482.6, uom: 'm3', unitCost: 0, totalCost: 0, mapped: true, mappedQuantityId: 'Q012', level: 5 },
-              { id: 'BQ007', code: 'ARAB.01.01.01.01.03', description: '3.00m - 4.50m deep', quantity: 1602.7, uom: 'm3', unitCost: 0, totalCost: 0, mapped: true, mappedQuantityId: 'Q016', level: 5 },
-              { id: 'BQ008', code: 'ARAB.01.01.01.01.04', description: '4.50m - 6.00m deep', quantity: 242.4, uom: 'm3', unitCost: 0, totalCost: 0, mapped: true, level: 5 },
+              { id: 'BQ004', code: 'A.01.01.01.01', description: 'Excavating for pile caps and footings', quantity: 0.0, uom: 'm3', unitCost: 0, totalCost: 0, mapped: false, level: 4 },
+              { id: 'BQ005', code: 'A.01.01.01.01.01', description: 'Not Exceeding 1.50 m deep', quantity: 2945.2, uom: 'm3', unitCost: 0, totalCost: 0, mapped: true, mappedQuantityId: 'Q007', level: 5 },
+              { id: 'BQ006', code: 'A.01.01.01.01.02', description: '1.50m - 3.00m deep', quantity: 2482.6, uom: 'm3', unitCost: 0, totalCost: 0, mapped: true, mappedQuantityId: 'Q012', level: 5 },
+              { id: 'BQ007', code: 'A.01.01.01.01.03', description: '3.00m - 4.50m deep', quantity: 1602.7, uom: 'm3', unitCost: 0, totalCost: 0, mapped: true, mappedQuantityId: 'Q016', level: 5 },
+              { id: 'BQ008', code: 'A.01.01.01.01.04', description: '4.50m - 6.00m deep', quantity: 242.4, uom: 'm3', unitCost: 0, totalCost: 0, mapped: true, level: 5 },
             ]
           },
           { 
             id: 'BQ009', 
-            code: 'ARAB.01.01.02', 
+            code: 'A.01.01.02', 
             description: 'IN-SITU CONCRETE', 
             quantity: 0.0, 
             uom: '', 
@@ -149,9 +143,9 @@ const mockBQData: BQItem[] = [
             mapped: false, 
             level: 3,
             children: [
-              { id: 'BQ010', code: 'ARAB.01.01.02.01', description: 'Concrete: grade 20/20', quantity: 1.0, uom: '', unitCost: 0, totalCost: 0, mapped: false, level: 4 },
-              { id: 'BQ011', code: 'ARAB.01.01.02.01.01', description: 'Blinding: under pile caps, footings, tie beams', quantity: 0.0, uom: '', unitCost: 0, totalCost: 0, mapped: false, level: 5 },
-              { id: 'BQ012', code: 'ARAB.01.01.02.01.01.01', description: '75 mm thick', quantity: 111.2, uom: 'm3', unitCost: 0, totalCost: 0, mapped: true, level: 6 },
+              { id: 'BQ010', code: 'A.01.01.02.01', description: 'Concrete: grade 20/20', quantity: 1.0, uom: '', unitCost: 0, totalCost: 0, mapped: false, level: 4 },
+              { id: 'BQ011', code: 'A.01.01.02.01.01', description: 'Blinding: under pile caps, footings, tie beams', quantity: 0.0, uom: '', unitCost: 0, totalCost: 0, mapped: false, level: 5 },
+              { id: 'BQ012', code: 'A.01.01.02.01.01.01', description: '75 mm thick', quantity: 111.2, uom: 'm3', unitCost: 0, totalCost: 0, mapped: true, level: 6 },
             ]
           }
         ]

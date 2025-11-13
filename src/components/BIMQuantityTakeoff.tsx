@@ -33,23 +33,9 @@ const mockElements: Element[] = [
 
 const mockQuantities: QuantityRow[] = [
   { id: 1, quantity: 'Length', value: '65.1', unit: 'M', expression: '', highlighted: 'blue' },
-  { id: 2, quantity: 'Reference side Surface Area', value: '132.9', unit: 'M2', expression: '0.400<Length>', highlighted: 'blue' },
-  { id: 3, quantity: 'Opposite side Surface Area', value: '133.1', unit: 'M2', expression: '5.940<Original area of formwork to column> - 0.450<Deduct in-situ slab>', highlighted: 'blue' },
-  { id: 4, quantity: 'Top Surface Area', value: '13.0', unit: 'M2', expression: '', highlighted: 'blue' },
-  { id: 5, quantity: 'Bottom Surface Area', value: '12.0', unit: 'M2', expression: '', highlighted: 'blue' },
-  { id: 6, quantity: 'Reference side Opening Surface Area', value: '11.7', unit: 'M2', expression: '', highlighted: 'blue' },
-  { id: 7, quantity: 'Opposite Reference side Opening S...', value: '11.7', unit: 'M2', expression: '', highlighted: 'blue' },
-  { id: 8, quantity: 'Net Volume', value: '26.6', unit: 'M3', expression: '', highlighted: 'orange' },
-  { id: 9, quantity: 'Gross Volume', value: '28.9', unit: 'M3', expression: '(0.400<Length> * 0.500<Width> * 3.300<Height>)-0.050<Deduct in-situ slab>', highlighted: 'orange' },
-  { id: 10, quantity: 'Joint Horizontal Surface Area', value: '0.0', unit: 'M2', expression: '(0.400<Length> * 0.500<Width> * 3.300<Height>)-0.050<Deduct in-situ slab>', highlighted: 'blue' },
-  { id: 11, quantity: 'Joint Vertical Surface Area', value: '0.0', unit: 'M2', expression: '', highlighted: 'blue' },
 ];
 
 const mockCalculations: Calculation[] = [
-  { id: 1, label: 'HKMM5 | M3', description: 'Slabs are measured across beams and non--structural columns and walls', type: 'info' },
-  { id: 2, label: 'HKMM5 | M2', description: 'Concrete volume is measured net, but no deductions are for: voids <= 0.10 m3 in volume, except voids in waffle slabs.', type: 'info' },
-  { id: 3, label: 'Checking | Gaps check', description: 'A gap exists between RCwall xxxx and RCwall yyyy.', type: 'error' },
-  { id: 4, label: 'Checking | ABC check', description: 'ABC warning.', type: 'warning' },
 ];
 
 export function BIMQuantityTakeoff() {
